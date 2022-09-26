@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    body{
+        @apply bg-gray-300
+    }
+    .l-header-area{
+        @apply h-[32rem] hidden;
+    }
+    .header{
+        @apply relative;
+    }
+    .navigation{
+        @apply h-16 py-4 flex justify-between text-white items-center absolute top-0 w-full;
+    }
+    .navigation__logo-area{
+        @apply h-full;
+    }
+    .navigation__logo{
+        @apply h-full
+    }
+    .navigation__icons{
+        @apply flex divide-x gap-2 items-center;
+    }
+    .navigation__icon{
+        @apply h-full;
+    }
+    .title{
+        @apply font-bold;
+    }
+    .title--2xl{
+        @apply text-2xl;
+        text-transform : uppercase;
+    }
+    .header__image-area{
+        @apply h-80 border w-full;
+    }
+    .header__image{
+        @apply h-full w-full;
+    }
+    .header__desc{
+        @apply bg-blue-400 rounded text-white py-12 px-3 w-3/4 absolute  top-64 left-12 opacity-90;
+    }
+    .description{
+        @apply font-light
+    }
+    .report{
+        @apply w-full bg-white relative;
+        border:2px solid black;
+
+    }
+    .l-report-area{
+        @apply h-[28rem] hidden;
+        border:2px solid black;
+    }
+
+    .report__image-area{
+        @apply h-52 w-full ;
+    }
+    .report__image{
+        @apply w-full h-full object-cover object-top;
+    }
+    .report__title{
+        @apply text-2xl 
+    }
+    .report__desc{
+        @apply text-sm w-3/4 left-12 bg-white absolute top-44 px-8 py-4;
+    }
+    .report__icon{
+        @apply flex float-right pt-8 ;
+    }
+    .insights{
+        @apply hidden;
+    }
+    .insight-area{
+        @apply border h-96 w-96;
+    }
+    .insight{
+        @apply relative; 
+    }
+    .insight__image-area{
+        @apply w-full;
+    }
+    .insight__image{
+        @apply h-full;
+    }
+    .insight__desc{
+        @apply bg-white w-[95%] absolute left-3 py-4 px-8 ; 
+        top: 14rem;
+        
+    }
+    .insight__title{
+        @apply text-2xl;
+    }
+
+    .blue-card{
+        @apply bg-blue-700 text-white p-4 m-4;
+    }
+    .blue-card__subtitle{
+        @apply text-sm mb-4;
+    }
+    .blue-card__title{
+        @apply text-2xl mb-4;
+    }
+    .link{
+        @apply rounded-full border border-gray-900 px-6 py-4 w-52 mx-auto flex gap-4;
+        box-sizing : border-box;
+    }
+    
+}
